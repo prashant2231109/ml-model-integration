@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result page</title>
+</head>
+<body>
+    <form action="{% url 'result' %}">
+        {% csrf_token %}
+
+        Temparature :<input type="text" required name="Temparature "> <br> <br>
+        Humidity  :<input type="text" required name="Humidity  "> <br> <br>
+        Moisture :<input type="text" required name="Moisture "> <br> <br>
+        Soil Type:<input type="text" required name="Soil Type "> <br> <br>
+        Crop Type  :<input type="text" required name="Crop Type "> <br> <br>
+        Nitrogen   :<input type="text" required name="Nitrogen   "> <br> <br>
+        Potassium  :<input type="text" required name="Potassium  "> <br> <br>
+        Phosphorous   :<input type="text" required name="Phosphorous   "> <br> <br>
+        <input type="submit" name="" value="submit"> 
+        </form>
+</body>
+</html>
