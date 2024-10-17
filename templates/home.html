@@ -1,3 +1,4 @@
+{% load  static  %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <title>result page</title>
 </head>
 <body>
-    <form action="{% url 'result' %}">
+    <form action="{% url 'result' %}" method="post">
         {% csrf_token %}
 
         Temparature :<input type="text" required name="Temparature "> <br> <br>
